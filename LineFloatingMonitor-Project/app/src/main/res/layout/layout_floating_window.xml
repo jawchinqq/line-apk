@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
+    android:layout_width="300dp"
+    android:layout_height="220dp"
+    android:background="#CC1E1E1E"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#06C755"
+        android:paddingHorizontal="8dp">
+
+        <TextView
+            android:id="@+id/tv_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="LINE 即時訊息 (按住拖曳)"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@+id/btn_close"
+            android:padding="4dp"
+            android:text="清除"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:text="✕"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/resize_handle"
+        android:layout_below="@id/header_bar"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:text="[系統] 懸浮窗已啟動，等待 LINE 訊息中...\n"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/resize_handle"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|end"
+        android:padding="2dp"
+        android:text="◢"
+        android:textColor="#06C755"
+        android:textSize="18sp" />
+</RelativeLayout>

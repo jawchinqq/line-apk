@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="步驟 1：授權必要權限"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_overlay_perm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1. 開啟「顯示於上層 (懸浮窗)」權限" />
+
+    <Button
+        android:id="@+id/btn_notify_perm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2. 開啟「通知存取」權限 (必開)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="步驟 2：設定過濾群組名稱 (選填)"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_group_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="輸入群組關鍵字 (留空代表顯示所有LINE訊息)"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_save_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="儲存過濾條件" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="步驟 3：啟動桌面懸浮窗"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_start_floating"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#06C755"
+        android:text="啟動 LINE 桌面浮動視窗"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
